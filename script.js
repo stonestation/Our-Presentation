@@ -1,3 +1,13 @@
+const correctPassword = "1971";
+
+  const userPassword = prompt("Enter password to access this site:");
+
+  if (userPassword !== correctPassword) {
+    alert("Incorrect password!");
+    window.location.href = "https://www.google.com";
+  }
+
+
 
 // Works data with categories
 const worksData = [
@@ -721,28 +731,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-const url = new URL(window.location.href);
-const params = url.searchParams;
-const token = params.get("token");
-const timestamp = params.get("t"); // Time when link was generated (in milliseconds)
+// const url = new URL(window.location.href);
+// const params = url.searchParams;
+// const token = params.get("token");
+// const timestamp = params.get("t"); // Time when link was generated (in milliseconds)
 
-// const EXPIRATION_TIME = 30 * 60 * 1000; // 30 minutes in milliseconds
+// // const EXPIRATION_TIME = 30 * 60 * 1000; // 30 minutes in milliseconds
 
-const EXPIRATION_TIME = 30 * 60 * 1000;
-// If token is wrong OR timestamp is missing OR link expired
-if (token !== "SECRET_KEY" || !timestamp || (Date.now() - parseInt(timestamp)) > EXPIRATION_TIME) {
-    // Show a countdown before redirecting
-    let secondsLeft = 1800;
-    const countdownElement = document.createElement('div');
-    countdownElement.textContent = `Link expired or invalid. Redirecting in ${secondsLeft} seconds...`;
-    document.body.prepend(countdownElement);
+// const EXPIRATION_TIME = 30 * 60 * 1000;
+// // If token is wrong OR timestamp is missing OR link expired
+// if (token !== "SECRET_KEY" || !timestamp || (Date.now() - parseInt(timestamp)) > EXPIRATION_TIME) {
+//     // Show a countdown before redirecting
+//     let secondsLeft = 1800;
+//     const countdownElement = document.createElement('div');
+//     countdownElement.textContent = `Link expired or invalid. Redirecting in ${secondsLeft} seconds...`;
+//     document.body.prepend(countdownElement);
 
-    const countdownInterval = setInterval(() => {
-        secondsLeft--;
-        countdownElement.textContent = `Link expired in.${secondsLeft} seconds...`;
-        if (secondsLeft <= 0) {
-            clearInterval(countdownInterval);
-            window.location.href = "https://google.com/404"; // Redirect after delay
-        }
-    }, 1000);
-}
+//     const countdownInterval = setInterval(() => {
+//         secondsLeft--;
+//         countdownElement.textContent = `Link expired in.${secondsLeft} seconds...`;
+//         if (secondsLeft <= 0) {
+//             clearInterval(countdownInterval);
+//             window.location.href = "https://google.com/404"; // Redirect after delay
+//         }
+//     }, 1000);
+// }
