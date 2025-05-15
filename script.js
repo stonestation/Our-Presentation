@@ -711,7 +711,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { passive: false });
 
     // Check URL for a temporary token
-if (new URL(window.location.href).searchParams.get("token") !== "SECRET_KEY") {
-    window.location.href = "https://google.com/404"; // Redirect if invalid
-}
+
+
+
+    // if (new URL(window.location.href).searchParams.get("token") !== "SECRET_KEY") {
+    //     window.location.href = "https://google.com/404"; // Redirect if invalid
+    // }
+
+
 });
+
+const url = new URL(window.location.href);
+const params = url.searchParams;
+const token = params.get("token");
+const timestamp = params.get("t"); // Time when link was generated (in milliseconds)
+
+// const EXPIRATION_TIME = 30 * 60 * 1000; // 30 minutes in milliseconds
+
+const EXPIRATION_TIME = 30 * 60 * 1000;
+// If token is wrong OR timestamp is missing OR link expired
+if (token !== "SECRET_KEY" || !timestamp || (Date.now() - parseInt(timestamp)) > EXPIRATION_TIME) {
+    // Show a countdown before redirecting
+    let secondsLeft = 1800;
+    const countdownElement = document.createElement('div');
+    countdownElement.textContent = `Link expired or invalid. Redirecting in ${secondsLeft} seconds...`;
+    document.body.prepend(countdownElement);
+
+    const countdownInterval = setInterval(() => {
+        secondsLeft--;
+        countdownElement.textContent = `Link expired in.${secondsLeft} seconds...`;
+        if (secondsLeft <= 0) {
+            clearInterval(countdownInterval);
+            window.location.href = "https://google.com/404"; // Redirect after delay
+        }
+    }, 1000);
+}
