@@ -709,4 +709,9 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
         }
     }, { passive: false });
+
+    // Check URL for a temporary token
+if (new URL(window.location.href).searchParams.get("token") !== "SECRET_KEY") {
+    window.location.href = "https://stonestation.com/404"; // Redirect if invalid
+}
 });
