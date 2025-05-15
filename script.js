@@ -1,11 +1,12 @@
 const correctPassword = "1971";
 
-  const userPassword = prompt("Enter password to access this site:");
+const userPassword = prompt("Enter password to access this site:");
 
-  if (userPassword !== correctPassword) {
+
+if (userPassword !== correctPassword) {
     alert("Incorrect password!");
     window.location.href = "https://www.google.com";
-  }
+}
 
 
 
