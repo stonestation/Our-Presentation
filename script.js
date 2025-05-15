@@ -55,6 +55,7 @@ const worksData = [
         id: 7,
         title: "Stone Station ",
         image: "images/exterior/eximg-4.JPG",
+
         location: "Rajkot",
         category: "exterior",
         material: ""
@@ -62,7 +63,8 @@ const worksData = [
     {
         id: 8,
         title: "Stone Station ",
-        image: "images/exterior/eximg-5.JPG",
+        image: "images/exterior/eximg-5.jpg",
+
         location: "Rajkot",
         category: "exterior",
         material: ""
@@ -96,7 +98,8 @@ const worksData = [
     {
         id: 12,
         title: "Stone Station ",
-        image: "images/interior/inimg-6.JPG",
+        image: "images/interior/inimg-6.jpg",
+
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -131,7 +134,8 @@ const worksData = [
     {
         id: 16,
         title: "Stone Station ",
-        image: "images/interior/inimg-7.JPG",
+        image: "images/interior/inimg-7.jpg",
+
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -139,7 +143,7 @@ const worksData = [
     {
         id: 17,
         title: "Stone Station ",
-        image: "images/interior/inimg-8.JPG",
+        image: "images/interior/inimg-8.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -174,7 +178,7 @@ const worksData = [
     {
         id: 21,
         title: "Stone Station ",
-        image: "images/exterior/eximg-12.JPG",
+        image: "images/exterior/eximg-12.jpg",
         location: "Rajkot",
         category: "exterior",
         material: ""
@@ -190,7 +194,7 @@ const worksData = [
     {
         id: 23,
         title: "Stone Station ",
-        image: "images/interior/inimg-14.JPG",
+        image: "images/interior/inimg-14.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -199,7 +203,7 @@ const worksData = [
     {
         id: 24,
         title: "Stone Station ",
-        image: "images/interior/inimg-15.JPG",
+        image: "images/interior/inimg-15.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -224,7 +228,7 @@ const worksData = [
     {
         id: 27,
         title: "Stone Station ",
-        image: "images/interior/inimg-16.JPG",
+        image: "images/interior/inimg-16.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -232,7 +236,7 @@ const worksData = [
     {
         id: 28,
         title: "Stone Station ",
-        image: "images/interior/inimg-17.JPG",
+        image: "images/interior/inimg-17.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -278,14 +282,14 @@ const worksData = [
     }, {
         id: 34,
         title: "Stone Station ",
-        image: "images/interior/inimg-23.JPG",
+        image: "images/interior/inimg-23.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
     }, {
         id: 35,
         title: "Stone Station ",
-        image: "images/interior/inimg-24.JPG",
+        image: "images/interior/inimg-24.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -306,7 +310,7 @@ const worksData = [
     }, {
         id: 38,
         title: "Stone Station ",
-        image: "images/interior/inimg-27.JPG",
+        image: "images/interior/inimg-27.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -351,7 +355,7 @@ const worksData = [
     {
         id: 44,
         title: "Stone Station ",
-        image: "images/interior/inimg-33.JPG",
+        image: "images/interior/inimg-33.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -367,7 +371,7 @@ const worksData = [
     {
         id: 46,
         title: "Stone Station ",
-        image: "images/interior/inimg-35.JPG",
+        image: "images/interior/inimg-35.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -375,7 +379,7 @@ const worksData = [
     {
         id: 47,
         title: "Stone Station ",
-        image: "images/interior/inimg-36.JPG",
+        image: "images/interior/inimg-36.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
@@ -408,7 +412,7 @@ const worksData = [
     {
         id: 51,
         title: "Stone Station ",
-        image: "images/interior/inimg-40.JPG",
+        image: "images/interior/inimg-40.jpg",
         location: "Rajkot",
         category: "interior",
         material: ""
