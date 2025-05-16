@@ -9,9 +9,26 @@ if (userPassword !== correctPassword) {
 }
 
 
+// {
+//         id: 52,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-41.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
 
 // Works data with categories
 const worksData = [
+    {
+        id: 53,
+        title: "Stone Station ",
+        image: "images/exterior/exmg-adbparty.jpg",
+        location: "Rajkot ADB Hotel",
+        category: "exterior",
+        material: ""
+    },
+
     {
         id: 1,
         title: "Stone Station ",
