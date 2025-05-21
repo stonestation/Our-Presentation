@@ -1,12 +1,12 @@
-const correctPassword = "1971";
+// const correctPassword = "1971";
 
-const userPassword = prompt("Enter password to access this site:");
+// const userPassword = prompt("Enter password to access this site:");
 
 
-if (userPassword !== correctPassword) {
-    alert("Incorrect password!");
-    window.location.href = "https://www.google.com";
-}
+// if (userPassword !== correctPassword) {
+//     alert("Incorrect password!");
+//     window.location.href = "https://www.google.com";
+// }
 
 
 // {
@@ -19,442 +19,472 @@ if (userPassword !== correctPassword) {
 //     },
 
 // Works data with categories
-const worksData = [
-    {
-        id: 53,
+// const worksData = [
+//     {
+//         id: 53,
+//         title: "Stone Station ",
+//         image: "images/exterior/exmg-adbparty.jpg",
+//         location: "Rajkot ADB Hotel",
+//         category: "exterior",
+//         material: ""
+//     },
+
+//     {
+//         id: 1,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-1.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 2,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-2.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+
+//     {
+//         id: 3,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-3.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 4,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-1.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 5,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-2.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+//     {
+//         id: 6,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-3.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 7,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-4.JPG",
+
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 8,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-5.jpg",
+
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+
+//     {
+//         id: 9,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-6.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 10,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-4.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 11,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-5.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+//     {
+//         id: 12,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-6.jpg",
+
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+
+//     {
+//         id: 13,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-7.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 14,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-8.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+
+//     {
+//         id: 15,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-9.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 16,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-7.jpg",
+
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 17,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-8.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+//     {
+//         id: 18,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-9.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+//     {
+//         id: 19,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-10.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 20,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-11.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+
+//     {
+//         id: 21,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-12.jpg",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 22,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-13.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 23,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-14.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+//     {
+//         id: 24,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-15.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+//     {
+//         id: 25,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-13.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 26,
+//         title: "Stone Station ",
+//         image: "images/exterior/eximg-14.JPG",
+//         location: "Rajkot",
+//         category: "exterior",
+//         material: ""
+//     },
+//     {
+//         id: 27,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-16.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 28,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-17.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+//     {
+//         id: 29,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-18.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 30,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-19.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 31,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-20.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 32,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-21.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 33,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-22.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 34,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-23.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 35,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-24.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 36,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-25.JPEG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 37,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-26.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 38,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-27.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 39,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-28.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 40,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-29.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     }, {
+//         id: 41,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-30.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 42,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-31.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 43,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-32.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 44,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-33.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 45,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-34.JPEG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 46,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-35.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 47,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-36.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 48,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-37.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 49,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-38.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 50,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-39.JPEG",
+
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 51,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-40.jpg",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+//     {
+//         id: 52,
+//         title: "Stone Station ",
+//         image: "images/interior/inimg-41.JPG",
+//         location: "Rajkot",
+//         category: "interior",
+//         material: ""
+//     },
+
+
+
+
+
+// ];
+
+const worksDataIn = [];
+for (let i = 2; i <= 232; i++) {
+    worksDataIn.push({
+        id: i,
         title: "Stone Station ",
-        image: "images/exterior/exmg-adbparty.jpg",
-        location: "Rajkot ADB Hotel",
+        image: `images/Interior-3/image-${i - 1}.jpg`,
+
+        location: "Rajkot",
+        category: "interior",
+        material: ""
+    });
+}
+const worksDataEx = [];
+for (let i = 2; i <= 432; i++) {
+    worksDataEx.push({
+        id: i,
+        title: "Stone Station ",
+
+        image: `images/Exterior-5/image-${i - 1}.jpg`,
+
+        location: "Rajkot",
         category: "exterior",
         material: ""
-    },
-
-    {
-        id: 1,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-1.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 2,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-2.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-
-    {
-        id: 3,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-3.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 4,
-        title: "Stone Station ",
-        image: "images/interior/inimg-1.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 5,
-        title: "Stone Station ",
-        image: "images/interior/inimg-2.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-    {
-        id: 6,
-        title: "Stone Station ",
-        image: "images/interior/inimg-3.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 7,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-4.JPG",
-
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 8,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-5.jpg",
-
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-
-    {
-        id: 9,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-6.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 10,
-        title: "Stone Station ",
-        image: "images/interior/inimg-4.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 11,
-        title: "Stone Station ",
-        image: "images/interior/inimg-5.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-    {
-        id: 12,
-        title: "Stone Station ",
-        image: "images/interior/inimg-6.jpg",
-
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-
-    {
-        id: 13,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-7.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 14,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-8.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-
-    {
-        id: 15,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-9.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 16,
-        title: "Stone Station ",
-        image: "images/interior/inimg-7.jpg",
-
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 17,
-        title: "Stone Station ",
-        image: "images/interior/inimg-8.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-    {
-        id: 18,
-        title: "Stone Station ",
-        image: "images/interior/inimg-9.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-    {
-        id: 19,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-10.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 20,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-11.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-
-    {
-        id: 21,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-12.jpg",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 22,
-        title: "Stone Station ",
-        image: "images/interior/inimg-13.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 23,
-        title: "Stone Station ",
-        image: "images/interior/inimg-14.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-    {
-        id: 24,
-        title: "Stone Station ",
-        image: "images/interior/inimg-15.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-    {
-        id: 25,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-13.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 26,
-        title: "Stone Station ",
-        image: "images/exterior/eximg-14.JPG",
-        location: "Rajkot",
-        category: "exterior",
-        material: ""
-    },
-    {
-        id: 27,
-        title: "Stone Station ",
-        image: "images/interior/inimg-16.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 28,
-        title: "Stone Station ",
-        image: "images/interior/inimg-17.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-    {
-        id: 29,
-        title: "Stone Station ",
-        image: "images/interior/inimg-18.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 30,
-        title: "Stone Station ",
-        image: "images/interior/inimg-19.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 31,
-        title: "Stone Station ",
-        image: "images/interior/inimg-20.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 32,
-        title: "Stone Station ",
-        image: "images/interior/inimg-21.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 33,
-        title: "Stone Station ",
-        image: "images/interior/inimg-22.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 34,
-        title: "Stone Station ",
-        image: "images/interior/inimg-23.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 35,
-        title: "Stone Station ",
-        image: "images/interior/inimg-24.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 36,
-        title: "Stone Station ",
-        image: "images/interior/inimg-25.JPEG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 37,
-        title: "Stone Station ",
-        image: "images/interior/inimg-26.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 38,
-        title: "Stone Station ",
-        image: "images/interior/inimg-27.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 39,
-        title: "Stone Station ",
-        image: "images/interior/inimg-28.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 40,
-        title: "Stone Station ",
-        image: "images/interior/inimg-29.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    }, {
-        id: 41,
-        title: "Stone Station ",
-        image: "images/interior/inimg-30.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 42,
-        title: "Stone Station ",
-        image: "images/interior/inimg-31.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 43,
-        title: "Stone Station ",
-        image: "images/interior/inimg-32.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 44,
-        title: "Stone Station ",
-        image: "images/interior/inimg-33.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 45,
-        title: "Stone Station ",
-        image: "images/interior/inimg-34.JPEG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 46,
-        title: "Stone Station ",
-        image: "images/interior/inimg-35.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 47,
-        title: "Stone Station ",
-        image: "images/interior/inimg-36.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 48,
-        title: "Stone Station ",
-        image: "images/interior/inimg-37.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 49,
-        title: "Stone Station ",
-        image: "images/interior/inimg-38.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 50,
-        title: "Stone Station ",
-        image: "images/interior/inimg-39.JPEG",
-
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 51,
-        title: "Stone Station ",
-        image: "images/interior/inimg-40.jpg",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-    {
-        id: 52,
-        title: "Stone Station ",
-        image: "images/interior/inimg-41.JPG",
-        location: "Rajkot",
-        category: "interior",
-        material: ""
-    },
-
-];
+    });
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     const galleryContainer = document.getElementById('gallery-container');
@@ -516,9 +546,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Filter works by category
     function filterWorks(category) {
         if (category === 'all') {
-            filteredWorks = [...worksData];
-        } else {
-            filteredWorks = worksData.filter(work => work.category === category);
+            filteredWorks = [...worksDataIn];
+            filteredWorks = [...worksDataEx];
+
+        } else if (category === 'interior') {
+
+
+            filteredWorks = worksDataIn.filter(work => work.category === category);
+
+        }
+        else {
+            filteredWorks = worksDataEx.filter(work => work.category === category);
         }
         generateGalleryItems(filteredWorks);
     }
