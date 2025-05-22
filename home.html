@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Stone Station - Portfolio</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Stone Station</h1>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="section-header">
+        <h2>Our Stone Work Portfolio</h2>
+        <!-- <p>Showcasing premium stone craftsmanship and installations</p> -->
+    </div>
+
+    <!-- Category Filters -->
+    <div class="category-filters">
+        <button class="category-btn active" data-category="all">All Works</button>
+        <button class="category-btn" data-category="interior">Interior</button>
+        <button class="category-btn" data-category="exterior">Exterior</button>
+        <a href="https://stonestation.github.io/Our-Product/"><button class="category-btn">Product</button></a>
+
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery" id="gallery-container">
+        <!-- Items will be loaded by JavaScript -->
+    </div>
+
+    <!-- Zoom Modal -->
+    <div id="zoom-modal" class="zoom-modal">
+        <div class="zoom-content">
+            <img id="zoomed-image" class="zoomed-image" src="" alt="">
+            <div class="zoom-nav">
+                <button id="prev-zoom"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-zoom"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="zoom-controls">
+                <button id="zoom-out"><i class="fas fa-search-minus"></i></button>
+                <button id="zoom-reset"><i class="fas fa-expand"></i></button>
+                <button id="zoom-in"><i class="fas fa-search-plus"></i></button>
+            </div>
+            <span class="close-zoom">&times;</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="credits">
+                <div>
+                    <span>Developed by</span>
+                    <span class="developer"><a
+                            href="https://www.instagram.com/shainowebsolutions?igsh=MTN1aWU5ZDZ2bnJpag=="
+                            style="text-decoration: none;">@shainowebsolutions</a></span>
+                </div>
+                <!-- <div>
+                    <span>Designed by</span>
+                    <span class="designer">Jay Dholakiya</span>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
