@@ -519,7 +519,7 @@ document.addEventListener('DOMContentLoaded', function () {
             galleryItem.setAttribute('data-index', index);
 
             galleryItem.innerHTML = `
-                        <img src="${work.image}" alt="${work.title}" class="gallery-image">
+                        <img src="${work.image}" alt="${work.title}" class="gallery-image" loading="lazy">
                         <div class="gallery-info">
                             <h3 class="gallery-title">${work.title}</h3>
                             <div class="gallery-location">
